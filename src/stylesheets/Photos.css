@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=Photos.css.map */
+#photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border: 2px inset green;
+}
+/*# sourceMappingURL=Photos.css.map */

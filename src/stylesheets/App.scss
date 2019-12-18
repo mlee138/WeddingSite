@@ -88,7 +88,7 @@ $animationDelay: 0.5s;
 
 nav {
     border-bottom: 1px solid #9e9e9e;
-
+    font-family: 'Staatliches', cursive;
     ul{
         display: flex;
         flex-direction: row;
@@ -114,7 +114,7 @@ nav {
 .green4 { &:hover{border-bottom: 2px solid rgb(33, 199, 27); }}
 .green5 { &:hover{border-bottom: 2px solid forestgreen; }}
 
-main {padding: 75px 25%;}
+main {padding: 75px 20%;}
 
 footer {
     display: flex;

@@ -1,4 +1,9 @@
 #registry {
   text-align: center;
 }
+
+#registry span {
+  color: green;
+  font-weight: bold;
+}
 /*# sourceMappingURL=Registry.css.map */

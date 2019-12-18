@@ -1,0 +1,11 @@
+#photos {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.photo {
+    width: 200px;
+    height: 200px; 
+    border: 2px inset green;
+}
