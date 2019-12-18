@@ -6,7 +6,10 @@
 body {
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
 }
+
+$animationDelay: 0.5s;
 
 .App {
     header{
@@ -20,25 +23,67 @@ body {
         svg {
             font-size: 5em;
             fill: rgba(133, 218, 195, 0);
-            stroke: darkblue;
+            stroke: rgba(0, 0, 139, 0);
             stroke-width: 5px;
             stroke-dasharray: 0,0;
             letter-spacing: 2px;
-            animation: headerText 2s ease-in-out 0.5s forwards;
+            animation: headerText 2s ease-in-out $animationDelay forwards;
         }
         div{
+            position: relative;
             margin: 0 auto;
             width: 300px;
-            border-top: 5px solid darkblue;
             color: darkblue;
             font-size: 1.5em;
+            
+            &::before{
+                content: '';
+                position: absolute;
+                top: -5px;
+                right: 50%;
+                width: 0%;
+                opacity: 0;
+                animation: headerBorder 1.5s ease-in-out $animationDelay*2 forwards;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: -5px;
+                left: 50%;
+                width: 0%;
+                animation: headerBorder 1.5s ease-in-out $animationDelay*2 forwards;
+            }
         }
     }
 }
 
 @keyframes headerText {
-    0% { stroke-dasharray: 0,100; }
-    100% { stroke-dasharray: 100, 0; fill: rgba(133, 218, 195, 1);}
+    0% { 
+        stroke-dasharray: 0,100; 
+        stroke: rgba(0, 0, 139, 1);
+    }
+    100% { 
+        stroke: rgba(0, 0, 139, 1);
+        stroke-dasharray: 100, 0; fill: rgba(133, 218, 195, 1);
+    }
+}
+
+@keyframes headerBorder{
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    1%{
+        opacity: 1;
+        width: 0%;
+        border: 2px solid darkblue;
+    }
+
+    100% {
+        opacity: 1;
+        width: 50%;
+        border: 2px solid darkblue;
+    }
 }
 
 nav {
@@ -69,10 +114,7 @@ nav {
 .green4 { &:hover{border-bottom: 2px solid rgb(33, 199, 27); }}
 .green5 { &:hover{border-bottom: 2px solid forestgreen; }}
 
-main {
-    padding: 75px 25%;
-    
-}
+main {padding: 75px 25%;}
 
 footer {
     display: flex;
@@ -82,4 +124,8 @@ footer {
     width: 100%;
     background-color: #68bca5;
     color: white;
+}
+
+@media screen and (max-width: 800px){
+    main { padding: 50px 10%; }
 }

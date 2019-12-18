@@ -1,7 +1,3 @@
-#details {
-  font-size: 1.3em;
-}
-
 #details h2 {
   color: #94c494;
   text-align: center;
@@ -32,5 +28,17 @@
 .row-container li {
   text-align: left;
   list-style-position: inside;
+}
+
+@media screen and (max-width: 800px) {
+  .row-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .row-container div {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=Details.css.map */

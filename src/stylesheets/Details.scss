@@ -1,5 +1,4 @@
 #details {
-    font-size: 1.3em;
     h2 {
         color: #94c494;
         text-align: center;
@@ -17,3 +16,11 @@
     li { text-align: left; list-style-position: inside;}
 }
 
+@media screen and (max-width: 800px){
+    .row-container { 
+        flex-direction: column;
+        div {
+            width: 100%;
+        }
+    }
+}

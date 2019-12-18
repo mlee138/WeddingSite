@@ -6,6 +6,7 @@
 body {
   margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2em;
 }
 
 .App header {
@@ -21,7 +22,7 @@ body {
 .App header svg {
   font-size: 5em;
   fill: rgba(133, 218, 195, 0);
-  stroke: darkblue;
+  stroke: rgba(0, 0, 139, 0);
   stroke-width: 5px;
   stroke-dasharray: 0,0;
   letter-spacing: 2px;
@@ -30,18 +31,41 @@ body {
 }
 
 .App header div {
+  position: relative;
   margin: 0 auto;
   width: 300px;
-  border-top: 5px solid darkblue;
   color: darkblue;
   font-size: 1.5em;
+}
+
+.App header div::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 50%;
+  width: 0%;
+  opacity: 0;
+  -webkit-animation: headerBorder 1.5s ease-in-out 1s forwards;
+          animation: headerBorder 1.5s ease-in-out 1s forwards;
+}
+
+.App header div::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: headerBorder 1.5s ease-in-out 1s forwards;
+          animation: headerBorder 1.5s ease-in-out 1s forwards;
 }
 
 @-webkit-keyframes headerText {
   0% {
     stroke-dasharray: 0,100;
+    stroke: darkblue;
   }
   100% {
+    stroke: darkblue;
     stroke-dasharray: 100, 0;
     fill: #85dac3;
   }
@@ -50,10 +74,46 @@ body {
 @keyframes headerText {
   0% {
     stroke-dasharray: 0,100;
+    stroke: darkblue;
   }
   100% {
+    stroke: darkblue;
     stroke-dasharray: 100, 0;
     fill: #85dac3;
+  }
+}
+
+@-webkit-keyframes headerBorder {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  1% {
+    opacity: 1;
+    width: 0%;
+    border: 2px solid darkblue;
+  }
+  100% {
+    opacity: 1;
+    width: 50%;
+    border: 2px solid darkblue;
+  }
+}
+
+@keyframes headerBorder {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  1% {
+    opacity: 1;
+    width: 0%;
+    border: 2px solid darkblue;
+  }
+  100% {
+    opacity: 1;
+    width: 50%;
+    border: 2px solid darkblue;
   }
 }
 
@@ -125,5 +185,11 @@ footer {
   width: 100%;
   background-color: #68bca5;
   color: white;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    padding: 50px 10%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

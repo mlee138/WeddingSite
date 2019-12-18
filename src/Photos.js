@@ -1,9 +1,10 @@
 import React from 'react';
-
 function Photos() {
     return(
-        <div>
-            This is the photos section.
+        <div id="photos">
+            <div className="photo"></div>
+            <div className="photo"></div>
+            <div className="photo"></div>
         </div>
     );
 }
