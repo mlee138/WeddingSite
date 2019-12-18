@@ -29,14 +29,12 @@ body {
           animation: headerText 2s ease-in-out 0.5s forwards;
 }
 
-.App header span {
+.App header div {
+  margin: 0 auto;
   width: 300px;
-  left: 40%;
-  top: 120px;
   border-top: 5px solid darkblue;
   color: darkblue;
   font-size: 1.5em;
-  position: absolute;
 }
 
 @-webkit-keyframes headerText {
@@ -110,7 +108,7 @@ nav ul li a {
 }
 
 main {
-  padding: 100px 25%;
+  padding: 75px 25%;
 }
 
 footer {

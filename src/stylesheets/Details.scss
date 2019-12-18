@@ -1,0 +1,19 @@
+#details {
+    font-size: 1.3em;
+    h2 {
+        color: #94c494;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    div { width: 50%;}
+    h3{ text-align: center;}
+    li { text-align: left; list-style-position: inside;}
+}
+

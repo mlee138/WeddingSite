@@ -68,7 +68,7 @@ class App extends React.Component {
           <svg height="130" width="750">
             <text x="0" y="100">Bro, we gettin' married</text>
           </svg>
-          <span>2020</span>
+          <div>2020</div>
         </header>
         <nav id="linktomain">
           <ul>

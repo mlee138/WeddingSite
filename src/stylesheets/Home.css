@@ -1,5 +1,5 @@
 #home h2 {
-  opacity: 0.5;
+  color: #94c494;
 }
 
 #home > p {
@@ -49,5 +49,14 @@
 #card-container .card h2 {
   margin: 0;
   font-family: 'Staatliches', cursive;
+}
+
+@media screen and (max-width: 950px) {
+  #card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=Home.css.map */

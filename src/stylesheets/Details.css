@@ -1,0 +1,36 @@
+#details {
+  font-size: 1.3em;
+}
+
+#details h2 {
+  color: #94c494;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.row-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.row-container div {
+  width: 50%;
+}
+
+.row-container h3 {
+  text-align: center;
+}
+
+.row-container li {
+  text-align: left;
+  list-style-position: inside;
+}
+/*# sourceMappingURL=Details.css.map */

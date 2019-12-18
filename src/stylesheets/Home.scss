@@ -1,5 +1,5 @@
 #home{
-    h2 { opacity: 0.5; }
+    h2 { color: #94c494; }
     & > p { 
         font-size: 1.4em; 
         text-indent: 50px; 
@@ -33,4 +33,8 @@
         }
         h2{ margin: 0; font-family: 'Staatliches', cursive; }
     }
+}
+
+@media screen and (max-width: 950px) {
+    #card-container { flex-direction: column; }
 }
