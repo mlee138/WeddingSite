@@ -19,7 +19,7 @@ function Details() {
                 
 
             </section>
-            <hr></hr>
+            <hr/>
             <section>
                 <h2>Wedding Party</h2>
                 <div className="row-container">

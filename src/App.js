@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './stylesheets/App.css';
 import './stylesheets/Home.css';
 import Photos from './Photos';
@@ -11,7 +10,7 @@ function Home() {
   return(
     <div id="home">
       <h2>"What's the story?"</h2>
-      <p>Aight, so heres how it went down. Basically, we both happened to be too dumb to get into a better school than SUNY Binghamton. Here we are, both dumbass Freshmen walking around, living in Newing, Endicott. We lived on the chem-free floor, since we were both delusional in thinking that we weren't going to do drugs or alchohol. We played some Uno, hung out a bunch, and here we are 4 years later taking on the world as <span>two halves of a whole idiot</span>.</p>
+      <p>Aight, so here's how it went down. Basically, we both happened to be too dumb to get into a better school than SUNY Binghamton. Here we are, both dumbass Freshmen walking around, living in Newing, Endicott. We lived on the chem-free floor, since we were both delusional in thinking that we weren't going to do drugs or alchohol. We played some Uno, hung out a bunch, and here we are 4 years later taking on the world as <span>two halves of a whole idiot</span>.</p>
       <div id="card-container">
         <div className="card">
           <img src="./images/Mindy.jpg" alt="Mindy"/>
@@ -22,7 +21,7 @@ function Home() {
         <div className="card">
           <img src="./images/Matt.jpg" alt="Matt"/>
           <h2>Him</h2>
-          <p>Hi, my name is Matthew Lee, which rhyms with cashew tea. My favorite activity is to make fun of Mindy and I know we wrote that we are two halves, but honestly I'm less of the idiot.</p>
+          <p>Hi, my name is Matthew Lee, which rhymes with cashew tea. My favorite activity is to make fun of Mindy and I know we wrote that we are two halves, but honestly I'm less of the idiot.</p>
         </div>
       </div>
     </div>
@@ -32,31 +31,31 @@ function Home() {
 class App extends React.Component {
   constructor(props){
     super(props);
-
+    this.state = {
+      currentPage: <Home/>
+    }
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = (section) => {
-    console.log(section);
-
     switch(section){
       case "Home":
-        ReactDOM.render(<Home/>, document.getElementById('main'));
+        this.setState({ currentPage: <Home/>});
         break;
       case "Photos":
-        ReactDOM.render(<Photos/>, document.getElementById('main'));
+        this.setState({ currentPage: <Photos/>});
         break;
       case "Details":
-        ReactDOM.render(<Details/>, document.getElementById('main'));
+        this.setState({ currentPage: <Details/>});
         break;
       case "RSVP":
-        ReactDOM.render(<RSVP/>, document.getElementById('main'));
+        this.setState({ currentPage: <RSVP/>});
         break;
       case "Registry":
-        ReactDOM.render(<Registry/>, document.getElementById('main'));
+        this.setState({ currentPage: <Registry/>});
         break;
       default:
-        ReactDOM.render(<Home/>, document.getElementById('main'));
+        this.setState({ currentPage: <Home/>});
         break;
     }
   }
@@ -65,8 +64,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <header>
-          <svg height="130" width="750">
-            <text x="0" y="100">Bro, we gettin' married</text>
+          <svg height="130" width="700">
+            <text x="0" y="100">We gettin' married</text>
           </svg>
           <div>2020</div>
         </header>
@@ -80,7 +79,7 @@ class App extends React.Component {
           </ul>
         </nav>
         <main id="main">
-          <Home/>
+          {this.state.currentPage}
         </main>
         <footer>
           Site built by Matt Lee. That's me.
