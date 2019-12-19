@@ -18,6 +18,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #card-container .card {
@@ -44,12 +50,30 @@
   margin: 0;
 }
 
+#image-container {
+  position: relative;
+  height: 200px;
+}
+
+#image-container span {
+  width: 95%;
+  height: 92%;
+  left: 2.25%;
+  top: 3.25%;
+  border: 2px solid white;
+  position: absolute;
+  opacity: 0.4;
+}
+
 @media screen and (max-width: 950px) {
   #card-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #card-container .card {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=Home.css.map */

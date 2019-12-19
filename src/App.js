@@ -13,13 +13,20 @@ function Home() {
       <p>Aight, so here's how it went down. Basically, we both happened to be too dumb to get into a better school than SUNY Binghamton. Here we are, both dumbass Freshmen walking around, living in Newing, Endicott. We lived on the chem-free floor, since we were both delusional in thinking that we weren't going to do drugs or alchohol. We played some Uno, hung out a bunch, and here we are 4 years later taking on the world as <span>two halves of a whole idiot</span>.</p>
       <div id="card-container">
         <div className="card">
-          <img src="./images/Mindy.jpg" alt="Mindy"/>
+          <div id="image-container">
+            <img src="./images/Mindy.jpg" alt="Mindy"/>
+            <span></span>
+          </div>
           <h2>Her</h2>
           <p>Hi, my name is Mindy Zou, which rhymes with Hindi cow. My spirit animal is Sailor Moon and I know we wrote that we are two halves of a whole idiot, but honestly she is most of the idiot. I'm a poopoopeepeehead.</p>
         </div>
 
         <div className="card">
-          <img src="./images/Matt.jpg" alt="Matt"/>
+          <div id="image-container">
+            <img src="./images/Matt.jpg" alt="Matt"/>
+            <span></span>
+          </div>
+          
           <h2>Him</h2>
           <p>Hi, my name is Matthew Lee, which rhymes with cashew tea. My favorite activity is to make fun of Mindy and I know we wrote that we are two halves, but honestly I'm less of the idiot.</p>
         </div>
@@ -64,7 +71,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header>
-          <svg height="130" width="700">
+          <svg>
             <text x="0" y="100">We gettin' married</text>
           </svg>
           <div>2020</div>

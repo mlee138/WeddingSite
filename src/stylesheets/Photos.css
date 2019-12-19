@@ -14,7 +14,7 @@
 #slideshow {
   position: relative;
   width: 800px;
-  height: 600px;
+  height: 700px;
   background: black;
   overflow: hidden;
 }
@@ -54,5 +54,15 @@
 
 #btn-next {
   right: 0;
+}
+
+@media screen and (max-width: 800px) {
+  #slideshow {
+    width: 400px;
+  }
+  .chevron {
+    height: 30px;
+    width: 30px;
+  }
 }
 /*# sourceMappingURL=Photos.css.map */
