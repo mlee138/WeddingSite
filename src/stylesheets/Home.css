@@ -76,4 +76,17 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: 775px) {
+  #card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #card-container .card {
+    width: 350px;
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=Home.css.map */
