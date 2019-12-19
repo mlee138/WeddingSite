@@ -36,6 +36,7 @@ $slideshow-height: 700px;
     font-family: 'Staatliches', cursive;
     font-size: 1em;
     cursor: pointer;
+    transition: opacity 0.15s;
     &:hover{ opacity: 1; }
 }
 

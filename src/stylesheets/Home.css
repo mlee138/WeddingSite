@@ -1,5 +1,5 @@
 #home h2 {
-  color: #94c494;
+  color: #488b48;
 }
 
 #home > p {
@@ -50,12 +50,12 @@
   margin: 0;
 }
 
-#image-container {
+.image-container {
   position: relative;
   height: 200px;
 }
 
-#image-container span {
+.image-container span {
   width: 95%;
   height: 92%;
   left: 2.25%;

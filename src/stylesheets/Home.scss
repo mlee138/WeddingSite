@@ -1,5 +1,5 @@
 #home{
-    h2 { color: #94c494; }
+    h2 { color: #488b48; }
     & > p { 
         font-size: 1.2em; 
         text-indent: 50px; 
@@ -33,7 +33,7 @@
     }
 }
 
-#image-container {
+.image-container {
     position: relative;
     height: 200px;
     span {

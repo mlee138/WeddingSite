@@ -13,7 +13,7 @@ function Home() {
       <p>Aight, so here's how it went down. Basically, we both happened to be too dumb to get into a better school than SUNY Binghamton. We were both simply dumbass Freshmen walking around, living in Newing, Endicott. We lived on the chem-free floor, since we were both delusional in thinking that we weren't going to do drugs or alchohol. We played some Uno, hung out a bunch, and here we are 4 years later taking on the world together as <span>two halves of a whole idiot</span>.</p>
       <div id="card-container">
         <div className="card">
-          <div id="image-container">
+          <div className="image-container">
             <img src="./images/Mindy.jpg" alt="Mindy"/>
             <span></span>
           </div>
@@ -22,7 +22,7 @@ function Home() {
         </div>
 
         <div className="card">
-          <div id="image-container">
+          <div className="image-container">
             <img src="./images/Matt.jpg" alt="Matt"/>
             <span></span>
           </div>
