@@ -146,8 +146,8 @@ footer {
   main {
     padding: 50px 5%;
   }
-  nav a {
-    padding: 5px 10px;
+  nav div a {
+    padding: 0px 10px;
     font-size: 1.1em;
   }
 }
