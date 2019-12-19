@@ -60,38 +60,10 @@ $animationDelay: 0.5s;
     }
 }
 
-@keyframes headerText {
-    0% { 
-        stroke-dasharray: 0,100; 
-        stroke: rgba(0, 0, 139, 1);
-    }
-    100% { 
-        stroke: rgba(0, 0, 139, 1);
-        stroke-dasharray: 100, 0; fill: rgba(133, 218, 195, 1);
-    }
-}
-
-@keyframes headerBorder{
-    0%{
-        opacity: 0;
-        width: 0%;
-    }
-    1%{
-        opacity: 1;
-        width: 0%;
-        border: 2px solid darkblue;
-    }
-
-    100% {
-        opacity: 1;
-        width: 50%;
-        border: 2px solid darkblue;
-    }
-}
-
 nav {
-    border-bottom: 1px solid white;
+    border: 1px solid white;
     font-family: 'Staatliches', cursive;
+    margin: 0;
     box-shadow: 0 5px 8px rgba(128, 128, 128, 0.4);
     ul{
         display: flex;
@@ -137,4 +109,34 @@ footer {
 @media screen and (max-width: 800px){
     .App header svg { font-size: 3em; width: 435px;}
     main { padding: 50px 5%; }
+    nav ul li{ margin: 0; }
+}
+
+@keyframes headerText {
+    0% { 
+        stroke-dasharray: 0,100; 
+        stroke: rgba(0, 0, 139, 1);
+    }
+    100% { 
+        stroke: rgba(0, 0, 139, 1);
+        stroke-dasharray: 100, 0; fill: rgba(133, 218, 195, 1);
+    }
+}
+
+@keyframes headerBorder{
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    1%{
+        opacity: 1;
+        width: 0%;
+        border: 2px solid darkblue;
+    }
+
+    100% {
+        opacity: 1;
+        width: 50%;
+        border: 2px solid darkblue;
+    }
 }

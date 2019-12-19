@@ -62,67 +62,10 @@ body {
           animation: headerBorder 1.5s ease-in-out 1s forwards;
 }
 
-@-webkit-keyframes headerText {
-  0% {
-    stroke-dasharray: 0,100;
-    stroke: darkblue;
-  }
-  100% {
-    stroke: darkblue;
-    stroke-dasharray: 100, 0;
-    fill: #85dac3;
-  }
-}
-
-@keyframes headerText {
-  0% {
-    stroke-dasharray: 0,100;
-    stroke: darkblue;
-  }
-  100% {
-    stroke: darkblue;
-    stroke-dasharray: 100, 0;
-    fill: #85dac3;
-  }
-}
-
-@-webkit-keyframes headerBorder {
-  0% {
-    opacity: 0;
-    width: 0%;
-  }
-  1% {
-    opacity: 1;
-    width: 0%;
-    border: 2px solid darkblue;
-  }
-  100% {
-    opacity: 1;
-    width: 50%;
-    border: 2px solid darkblue;
-  }
-}
-
-@keyframes headerBorder {
-  0% {
-    opacity: 0;
-    width: 0%;
-  }
-  1% {
-    opacity: 1;
-    width: 0%;
-    border: 2px solid darkblue;
-  }
-  100% {
-    opacity: 1;
-    width: 50%;
-    border: 2px solid darkblue;
-  }
-}
-
 nav {
-  border-bottom: 1px solid white;
+  border: 1px solid white;
   font-family: 'Staatliches', cursive;
+  margin: 0;
   -webkit-box-shadow: 0 5px 8px rgba(128, 128, 128, 0.4);
           box-shadow: 0 5px 8px rgba(128, 128, 128, 0.4);
 }
@@ -212,6 +155,67 @@ footer {
   }
   main {
     padding: 50px 5%;
+  }
+  nav ul li {
+    margin: 0;
+  }
+}
+
+@-webkit-keyframes headerText {
+  0% {
+    stroke-dasharray: 0,100;
+    stroke: darkblue;
+  }
+  100% {
+    stroke: darkblue;
+    stroke-dasharray: 100, 0;
+    fill: #85dac3;
+  }
+}
+
+@keyframes headerText {
+  0% {
+    stroke-dasharray: 0,100;
+    stroke: darkblue;
+  }
+  100% {
+    stroke: darkblue;
+    stroke-dasharray: 100, 0;
+    fill: #85dac3;
+  }
+}
+
+@-webkit-keyframes headerBorder {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  1% {
+    opacity: 1;
+    width: 0%;
+    border: 2px solid darkblue;
+  }
+  100% {
+    opacity: 1;
+    width: 50%;
+    border: 2px solid darkblue;
+  }
+}
+
+@keyframes headerBorder {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  1% {
+    opacity: 1;
+    width: 0%;
+    border: 2px solid darkblue;
+  }
+  100% {
+    opacity: 1;
+    width: 50%;
+    border: 2px solid darkblue;
   }
 }
 /*# sourceMappingURL=App.css.map */
