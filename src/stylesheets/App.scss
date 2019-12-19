@@ -61,8 +61,8 @@ $animationDelay: 0.5s;
 }
 
 nav {
-    border: 1px solid white;
     font-family: 'Staatliches', cursive;
+    border: 2px solid white;
     margin: 0;
     box-shadow: 0 5px 8px rgba(128, 128, 128, 0.4);
     ul{
@@ -79,6 +79,7 @@ nav {
                 text-decoration: none;
                 padding: 10px 15px;
                 position: relative;
+                left: -10px;
             }
         }
     }
