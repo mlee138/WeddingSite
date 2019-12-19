@@ -20,4 +20,70 @@
   font-weight: bold;
   text-decoration: underline;
 }
+
+.no-error {
+  opacity: 0;
+  padding: 10px 20px;
+  margin-top: 0;
+}
+
+.error-found {
+  margin-top: 0;
+  opacity: 1;
+  padding: 10px 20px;
+  color: #7b3438;
+  background-color: #f7d7da;
+  border-left: 3px solid #7b3438;
+}
+
+.email-sent {
+  margin-top: 0;
+  opacity: 1;
+  padding: 10px 20px;
+  color: #3c6c47;
+  background-color: #d4edda;
+  border-left: 3px solid #3c6c47;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  border: none;
+  width: 300px;
+}
+
+fieldset label {
+  padding: 5px;
+}
+
+fieldset input {
+  padding: 5px;
+  width: 100%;
+}
+
+fieldset textarea {
+  width: 100%;
+  height: 200px;
+}
+
+.btn-submit {
+  border: none;
+  border-radius: 5px;
+  background-color: #007aff;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  -webkit-transition: background-color 0.175s;
+  transition: background-color 0.175s;
+}
+
+.btn-submit:hover {
+  background-color: #0062ca;
+}
 /*# sourceMappingURL=RSVP.css.map */

@@ -7,6 +7,7 @@ class Photos extends React.Component {
 
         this.state = {
             images: [
+                './images/congrats.jpg',
                 './images/mm1.jpg',
                 './images/mm2.jpg',
                 './images/mm3.jpg',
