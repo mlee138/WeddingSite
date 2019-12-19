@@ -10,7 +10,7 @@ function Home() {
   return(
     <div id="home">
       <h2>"What's the story?"</h2>
-      <p>Aight, so here's how it went down. Basically, we both happened to be too dumb to get into a better school than SUNY Binghamton. Here we are, both dumbass Freshmen walking around, living in Newing, Endicott. We lived on the chem-free floor, since we were both delusional in thinking that we weren't going to do drugs or alchohol. We played some Uno, hung out a bunch, and here we are 4 years later taking on the world as <span>two halves of a whole idiot</span>.</p>
+      <p>Aight, so here's how it went down. Basically, we both happened to be too dumb to get into a better school than SUNY Binghamton. We were both simply dumbass Freshmen walking around, living in Newing, Endicott. We lived on the chem-free floor, since we were both delusional in thinking that we weren't going to do drugs or alchohol. We played some Uno, hung out a bunch, and here we are 4 years later taking on the world together as <span>two halves of a whole idiot</span>.</p>
       <div id="card-container">
         <div className="card">
           <div id="image-container">
@@ -18,7 +18,7 @@ function Home() {
             <span></span>
           </div>
           <h2>Her</h2>
-          <p>Hi, my name is Mindy Zou, which rhymes with Hindi cow. My spirit animal is Sailor Moon and I know we wrote that we are two halves of a whole idiot, but honestly she is most of the idiot. I'm a poopoopeepeehead.</p>
+          <p>Hi, my name is Mindy Zou, which rhymes with Hindi cow. My spirit animal is Sailor Moon and I know it says we are two halves of a whole idiot, but honestly I'm most of the idiot. Furthermore, I'm a poopoopeepeehead.</p>
         </div>
 
         <div className="card">
@@ -77,13 +77,13 @@ class App extends React.Component {
           <div>2020</div>
         </header>
         <nav id="linktomain">
-          <ul>
-            <li><a href="#linktomain" onClick={() => this.handleClick("Home")} className="green1">Home</a></li>
-            <li><a href="#linktomain" onClick={() => this.handleClick("Photos")} className="green2">Photos</a></li>
-            <li><a href="#linktomain" onClick={() => this.handleClick("Details")} className="green3">Details</a></li>
-            <li><a href="#linktomain" onClick={() => this.handleClick("RSVP")} className="green4">RSVP</a></li>
-            <li><a href="#linktomain" onClick={() => this.handleClick("Registry")} className="green5">Registry</a></li>
-          </ul>
+          <div>
+            <a href="#linktomain" onClick={() => this.handleClick("Home")} className="green1">Home</a>
+            <a href="#linktomain" onClick={() => this.handleClick("Photos")} className="green2">Photos</a>
+            <a href="#linktomain" onClick={() => this.handleClick("Details")} className="green3">Details</a>
+            <a href="#linktomain" onClick={() => this.handleClick("RSVP")} className="green4">RSVP</a>
+            <a href="#linktomain" onClick={() => this.handleClick("Registry")} className="green5">Registry</a>
+          </div>
         </nav>
         <main id="main">
           {this.state.currentPage}
