@@ -150,8 +150,8 @@ footer {
 
 @media screen and (max-width: 800px) {
   .App header svg {
-    font-size: 3em;
-    width: 435px;
+    font-size: 2.5em;
+    width: 375px;
   }
   main {
     padding: 50px 5%;
