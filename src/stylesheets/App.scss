@@ -109,7 +109,7 @@ footer {
 @media screen and (max-width: 800px){
     .App header svg { font-size: 3em; width: 435px;}
     main { padding: 50px 5%; }
-    nav ul li{ margin: 0; }
+    nav ul li a{ padding: 0; }
 }
 
 @keyframes headerText {

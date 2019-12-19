@@ -156,8 +156,8 @@ footer {
   main {
     padding: 50px 5%;
   }
-  nav ul li {
-    margin: 0;
+  nav ul li a {
+    padding: 0;
   }
 }
 
