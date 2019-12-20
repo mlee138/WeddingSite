@@ -52,7 +52,7 @@ class RSVP extends React.Component {
     render(){
         return(
             <div id="rsvp">
-                <p>To RSVP, please email Mindy or Matt  before <span>January 1st 11:59pm</span>. If you don't RSVP, you're stupid and cordially <span>uninvited</span>.</p>
+                <p>To RSVP, Send an email to Mindy, by filling out the form below, before <span>January 1st 11:59pm</span>. If you don't RSVP, you're stupid and cordially <span>uninvited</span>.</p>
                 <p className={this.state.error}>{this.state.submitMessage}</p>
                 <form id="rsvp_form">
                     <input type="hidden" name="contact_number"/>
