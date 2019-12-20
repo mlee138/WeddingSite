@@ -31,6 +31,7 @@ function Details() {
                             <li>Karen Chen</li>
                             <li>Chu Liu</li>
                             <li>Whitney Sun</li>
+                            <li>Jenny Lin</li>
                         </ul>
                     </div>
                     <div className="list">
@@ -41,6 +42,7 @@ function Details() {
                             <li>Alex Carpio</li>
                             <li>Adam Guarino</li>
                             <li>Darren Yu</li>
+                            <li>Bonnie Yam</li>
                         </ul>
                     </div>
                 </div>
