@@ -22,27 +22,26 @@ function Details() {
             <hr/>
             <section>
                 <h2>Wedding Party</h2>
+                <h3 id="mcminister">McMinister:</h3>
                 <div className="row-container">
                     <div className="list">
                         <h3>Bridesmaids</h3>
                         <ul>
-                            <li>Sam Shek</li>
                             <li>Jessica Zhao</li>
-                            <li>Karen Chen</li>
+                            <li>Bonnie Yam</li>
                             <li>Chu Liu</li>
                             <li>Whitney Sun</li>
                             <li>Jenny Lin</li>
                         </ul>
                     </div>
                     <div className="list">
-                        <h3>Bridesmaids</h3>
+                        <h3>Groomsmen</h3>
                         <ul>
                             <li>Sebastian Hubert</li>
                             <li>Andy Bow</li>
                             <li>Alex Carpio</li>
                             <li>Adam Guarino</li>
                             <li>Darren Yu</li>
-                            <li>Bonnie Yam</li>
                         </ul>
                     </div>
                 </div>

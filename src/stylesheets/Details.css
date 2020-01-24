@@ -5,6 +5,16 @@
   text-decoration: underline;
 }
 
+#details h3 {
+  text-align: center;
+}
+
+#details #mcminister::after {
+  content: " Karen Chen";
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
 .row-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,10 +30,6 @@
 
 .row-container div {
   width: 50%;
-}
-
-.row-container h3 {
-  text-align: center;
 }
 
 .row-container li {

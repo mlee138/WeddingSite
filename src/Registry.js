@@ -4,7 +4,7 @@ import './stylesheets/Registry.css'
 function Registry() {
     return(
         <div id="registry">
-            <img src="./images/piggy-bank-with-dollar-coins.png"/>
+            <img src="./images/piggy-bank-with-dollar-coins.png" alt="piggy bank"/>
             <div>Icon made by FreePik from www.flaticon.com</div>
             <p>Honestly, please just give us some good cold hard CA<span>$</span>H.</p>
             <p>We won't accept checks, but we will accept Amazon gift cards.</p>
